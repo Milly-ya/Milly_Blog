@@ -1,0 +1,29 @@
+footer{
+	background-color:#EE76AD;
+	color:#fff;
+	font-family:"High Tower Text";
+	font-weight:400;
+}
+@media (min-width:576px){
+	footer h4{
+		margin-top:50px;
+	}
+}
+@media (min-width:768px){
+	footer h4{
+		margin-top:70px;
+	}
+}
+@media (min-width:992px){
+	footer h4{
+		margin-top:80px;
+	}
+}
+footer a{
+	background-color:transparent;
+	color:rgba(255,255,255,0.7)!important;
+}
+footer a:hover{color:#FFC107!important;}
+footer>div>div div:last-child{
+	margin-top:80px;
+}

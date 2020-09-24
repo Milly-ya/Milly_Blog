@@ -1,0 +1,198 @@
+/* ===通用样式=== */
+body{
+	font-family:"High Tower Text";
+	background:ghostwhite;
+	font-weight:200;
+	color:#8b8b92;
+}
+.font_small{font-size:16px;}
+a,a:hover{
+	text-decoration:none;
+}
+/* ===折叠导航栏=== */
+.navbar{
+	font-size:20px;
+	box-shadow:none;
+	background:rgba(70,70,70,1);
+}
+@media (min-width:992px){
+	.navbar-nav{padding-left:300px;}
+}
+.navbar.active{
+	background:rgba(0,0,0);
+	transition:background 1s;
+}
+#nav_dir{
+	font-size:20px;
+	position:realtive;
+	font-weight:bolder;
+	transition:all 0.2s;
+}
+.fixnav{
+	position:fixed;
+	top:0;left:0;
+	font-size:24px;
+	z-index:20;
+	background:#6C62FF;
+}
+/* ===nav_logo导航背景样式=== */
+a.btn{
+	background:#6C62FF;
+	color:#fff!important;
+	border-radius:0.8rem;
+	outline:0;
+	margin-right:80px;
+}
+a.btn:hover{
+	background:#fff;
+	color:#000!important;
+	border-color:#EE76AD;
+}
+#nav_logo{
+	color:#6C62FF;
+	background:url("../img/bg.png") no-repeat;
+	background-size:contain;
+	height:100vh;width:100%;
+}
+#nav_logo h1{
+	font-size:3.5rem;
+}
+/* ===advertise广告栏样式=== */
+.my_color{
+	color:#EFAC78;
+	background-color:#FDF2EA;
+}
+/* ===宣传轮播图样式=== */
+#ad1{
+	width:80%;
+	margin:0 auto;
+}
+.carousel-indicators li{
+	width:0.7rem;height:0.7rem;
+	border-radius:50%;
+	margin-left:0.25rem;
+	margin-right:0.25rem;
+	background:#fff;
+	}
+.carousel-indicators .active{
+	background:#0aa1ed;
+	}
+/* ===hot_topic热门推荐样式=== */
+/* #hot_topic{height:100%;} */
+#hot_topic>h3{
+	height:140px;
+	line-height:140px;
+}
+.hot_style{
+	width:200px;
+	font-family:Arial;
+	text-decoration:none;
+	background-color:transparent;
+	position:relative;
+	display:block;
+}
+.hot_style:hover{
+	width:330px;
+	height:300px;
+	background:papayawhip;
+	z-index:1;
+	animation:fadeInUp;
+}
+.hot_style img{transition:transform 0.1s ease;}
+.hot_style:hover img{transform:scale(1.1);}
+.text{
+	position:absolute;
+	height:100px;
+	top:0;
+	right:0;
+	left:0;
+	opacity:0;
+	border-bottom:none;
+	z-index:-1;
+}
+.hot_style:hover .text{
+	opacity:1;
+	top:220px;
+	z-index:2;
+}
+/* ===detail详情页面样式=== */
+.detail{
+	width:100%;
+	border:1px solid #fff;
+	background:#fff;
+	position:relative;
+}
+.detail img{
+	animation:fadeInUp 2s;
+	position:relative;
+	z-index:20;
+}
+.detail:before{
+	content:"";
+	display:block;
+	width:0;height:100%;
+	background:#71DD80;
+	position:absolute;
+	transition:0.3s;
+}
+.detail:hover:before{
+	width:100%;
+}
+.detail .d_text{
+	position:relative;
+	z-index:20;
+}
+.post_1{
+	position:absolute;
+	top:-25px;right:0;
+	width:100px;height:90px;
+	background:#fe6566;
+	text-align:center;
+	border-radius:0px 0px 0px 100px;
+}
+.post_1 span{
+	font-size:40px;
+	font-weight:500;
+	color:#fff;
+	display:inline-block;	
+}
+/* =====idea建议栏样式===== */
+#idea{
+	height:100%;
+	color:#D1D1D4;
+	background:#fff;
+}
+#idea h2{
+	color:#404044;
+	padding-top:28px;
+	padding-bottom:20px;
+}
+@media (min-width:576px){
+	#idea h2{
+		font-size:28px!important;
+		}
+}
+@media (min-width:768px){
+	#idea h2{font-size:32px!important;}
+}
+@media (min-width:992px){
+	#idea h2{font-size:38px!important;}
+}
+#idea>div:first-child~div{
+	height:40%;
+	background-color:#fff;
+	transition:transform 1s;
+}
+#idea>div:first-child~div:hover{
+	box-shadow:1px 1px 5px 1px pink;
+	transform:translateY(-20px);
+}
+.D_1{
+	font-size:20px;
+	color:#333;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.my_footer{
+	width:100%;height:500px;
+}
